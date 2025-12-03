@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/auth", "destination": "/auth.html" },
+    { "source": "/events", "destination": "/events.html" },
+    { "source": "/booking", "destination": "/booking.html" },
+    { "source": "/payment", "destination": "/payment.html" },
+    { "source": "/user-bookings", "destination": "/user-bookings.html" },
+    { "source": "/admin-dashboard", "destination": "/admin-dashboard.html" },
+
+    { "source": "/(.*)", "destination": "/$1.html" }
+  ]
+}

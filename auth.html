@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Login / Register - EVENTEX</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="auth-page">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">EVENTEX</a>
+            </div>
+        </nav>
+
+        <div class="auth-container">
+            <div class="auth-box">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="register">Register</button>
+                </div>
+
+                <form id="loginForm" class="auth-form active">
+                    <h2>Welcome Back</h2>
+                    <div class="form-group">
+                        <label for="loginUsername">Username</label>
+                        <input type="text" id="loginUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginRole">Login As</label>
+                        <select id="loginRole">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Login</button>
+                    <div id="loginMessage" class="message"></div>
+                </form>
+
+                <form id="registerForm" class="auth-form">
+                    <h2>Create Account</h2>
+                    <div class="form-group">
+                        <label for="registerUsername">Username</label>
+                        <input type="text" id="registerUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Confirm Password</label>
+                        <input type="password" id="registerConfirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerRole">Register As</label>
+                        <select id="registerRole">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Register</button>
+                    <div id="registerMessage" class="message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./auth.js"></script>
+</body>
+
+</html>

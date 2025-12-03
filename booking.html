@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Book Seats - EVENTEX</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="booking-page">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">EVENTEX</a>
+            </div>
+            <div class="nav-links">
+                <a href="events.html" class="btn-secondary">Back to Events</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-header">
+                    <h1 id="eventName"></h1>
+                    <div class="event-info">
+                        <span id="eventDateTime"></span>
+                    </div>
+                </div>
+
+                <div class="booking-content">
+                    <div class="seat-selection">
+                        <h2>Select Your Seats</h2>
+                        <div class="screen">SCREEN</div>
+                        <div id="seatMap" class="seat-map"></div>
+                        
+                        <div class="seat-legend">
+                            <div class="legend-item">
+                                <span class="seat available"></span>
+                                <span>Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="seat selected"></span>
+                                <span>Selected</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="seat booked"></span>
+                                <span>Booked</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking-summary">
+                        <h3>Booking Summary</h3>
+                        <div class="summary-content">
+                            <div class="summary-item">
+                                <span>Selected Seats:</span>
+                                <span id="selectedSeatsCount">0</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Seat Numbers:</span>
+                                <span id="selectedSeatsList">None</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Price per Seat:</span>
+                                <span>$50</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Total Amount:</span>
+                                <span id="totalAmount">$0</span>
+                            </div>
+                        </div>
+                        <button id="proceedBtn" class="btn-primary btn-full" disabled>Proceed to Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./booking.js"></script>
+</body>
+
+</html>

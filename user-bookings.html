@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>My Bookings - EventHub</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="bookings-page">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">EventHub</a>
+            </div>
+            <div class="nav-links">
+                <a href="events.html" class="btn-secondary">Browse Events</a>
+                <button id="logoutBtn" class="btn-secondary">Logout</button>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="page-header">
+                <h1>My Bookings</h1>
+                <p>View your past and upcoming event bookings</p>
+            </div>
+
+            <div id="bookingsList" class="bookings-list">
+            </div>
+
+            <div id="noBookings" class="no-bookings" style="display: none;">
+                <p>You haven't made any bookings yet.</p>
+                <a href="events.html" class="btn-primary">Browse Events</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./user-bookings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Events - EVENTEX</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="events-page">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">EVENTEX</a>
+            </div>
+            <div class="nav-links">
+                <span id="userName" class="user-name"></span>
+                <a href="user-bookings.html" class="btn-secondary">My Bookings</a>
+                <button id="logoutBtn" class="btn-secondary">Logout</button>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="page-header">
+                <h1>Upcoming Events</h1>
+                <p>Browse and book your seats for exciting events</p>
+            </div>
+
+            <div id="eventsGrid" class="events-grid">
+            </div>
+
+            <div id="noEvents" class="no-events" style="display: none;">
+                <p>No events available at the moment. Check back later!</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./events.js"></script>
+</body>
+
+</html>
